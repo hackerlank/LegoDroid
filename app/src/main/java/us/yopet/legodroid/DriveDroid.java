@@ -88,7 +88,7 @@ public class DriveDroid extends Activity {
                 WebView.setWebContentsDebuggingEnabled(true);
             }
         }
-        _webView.loadUrl("https://lookafar.westhawk.co.uk:9000/abrick.html");
+        _webView.loadUrl("https://lookafar.westhawk.co.uk/fingersmith/abrick.html");
         //mWebView.loadUrl("http://limit.westhawk.co.uk:31735/pet/?client=android");
 
     }
