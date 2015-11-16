@@ -68,9 +68,12 @@ public class DriveDroid extends Activity {
         };
         WebSettings webSettings = _webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
+        webSettings.setUseWideViewPort(true);
+        webSettings.setCacheMode(webSettings.LOAD_NO_CACHE);
         _webView.setWebViewClient(new WebViewClient());
         _webView.setWebChromeClient(wcc);
         _webView.getSettings().setDomStorageEnabled(true);
+        _webView.setInitialScale(100);
         Object qrintent = new Object() {
             @android.webkit.JavascriptInterface
             public void scanQR() {
